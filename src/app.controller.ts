@@ -11,7 +11,7 @@ export class AppController {
     console.log(baseDTO.toJSON); // Defined
     const childDTO = new ChildDTO({ name: 'test', id: 2 });
     console.log(childDTO.toJSON); // Defined
-    const childOmitDTO = new ChildOmitDTO({ name: 'test', label: 'test' }); // Constructor doesn't aknowledge data?: Partial<T> as defined in BaseDTO
+    const childOmitDTO = new ChildOmitDTO({ name: 'test', label: 'test' }); // Constructor doesn't aknowledge (data?: Partial<T>) as defined in BaseDTO
     console.log(childOmitDTO.toJSON); // Undefined
   }
 }
